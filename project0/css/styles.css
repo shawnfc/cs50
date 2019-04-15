@@ -1,0 +1,52 @@
+/* 5 different properties */
+/* 5 different selectors */
+/* 1 ID and several classes */
+/* a media query */
+/* SCSS variable, nesting, and inheritence */
+p {
+  font-size: 1.1em;
+}
+
+ul {
+  background-color: #ccccd0;
+}
+
+ul li.nav-item {
+  text-transform: uppercase;
+}
+
+ul li.nav-item a {
+  color: #444;
+}
+
+.banner-container {
+  background-image: url(../../images/banner.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.banner-text-container {
+  position: relative;
+  color: whitesmoke;
+}
+
+.banner-text-container h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.banner-text-container h2 {
+  font-size: 3em;
+}
+
+.banner-text {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 50%;
+}
+
+img.about-image {
+  max-height: 350px;
+}
+/*# sourceMappingURL=styles.css.map */

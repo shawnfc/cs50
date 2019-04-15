@@ -1,0 +1,58 @@
+/* 5 different properties */
+/* 5 different selectors */
+/* 1 ID and several classes */
+/* a media query */
+/* SCSS variable, nesting, and inheritence */
+
+// Variables
+$main-color: #4a4ab9;
+
+// Global
+p {
+    font-size: 1.1em;
+}
+
+// Navigation
+ul {
+    background-color: #ccccd0;
+
+    li.nav-item {
+        text-transform: uppercase;
+
+        a {
+            color: #444;
+        }
+    }
+}
+
+// Home page
+.banner-container {
+    background-image: url(../../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.banner-text-container {
+    position: relative;
+    color: whitesmoke;
+    h1 {
+        font-size: 4em;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+}
+
+.banner-text {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    width: 50%;
+}
+
+// About page
+img.about-image {
+    max-height: 350px;
+}
