@@ -1,71 +1,77 @@
-/* 5 different properties */
-/* 5 different selectors */
-/* 1 ID and several classes */
-/* a media query */
-/* SCSS variable, nesting, and inheritence */
-
-
-
 // Variables
 $main-color: #4a4ab9;
 
 // Global
 body,
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 // Navigation
-ul {
-    background-color: rgba(0, 0, 0, 0.8);
+ul.nav {
+  background-color: $main-color;
 
-    li.nav-item {
-        text-transform: uppercase;
+  li.nav-item {
+    text-transform: uppercase;
 
-        a {
-            color: #fff;
-            ;
-        }
+    a {
+      color: #fff;
     }
+  }
 }
 
-
-
 // Home page
-div.banner-text-container {
-    background-image: url('/images/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    background-position: top;
-    position: relative;
-    text-align: center;
-    color: whitesmoke;
+div#banner-text-container {
+  background-image: url("/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: top;
+  // position: relative;
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
 
-    h1 {
-        font-size: 4em;
-        font-weight: bold;
-    }
+  div.banner-text {
+    margin: auto;
+  }
 
-    h2 {
-        font-size: 3em;
-    }
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+  }
 
-    div.banner-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  h2 {
+    font-size: 3em;
+  }
 }
 
 // About page
 img.about-image {
-    max-height: 350px;
+  max-height: 350px;
+}
+
+table.followMe {
+  tr,
+  td,
+  th {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner-text-container {
+    div.banner-text h1.display-4 {
+      font-size: 3em;
+    }
+    div.banner-text h2.lead {
+      font-size: 2.5em;
+    }
+  }
 }
